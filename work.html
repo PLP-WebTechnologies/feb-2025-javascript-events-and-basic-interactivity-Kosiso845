@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INTERACTIVITY</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>JAVASCRIPT EVENTS AND BASIC INTERACTIVITY </h2>
+ <div>
+  <!-- Button Click -->
+  <button id="clickButton">Click Here </button>
+  <button id="btnColor" onclick ="ChangeColor()">Click to change color</button>
+  <!-- Hover Effects -->
+  <div id="hoverBox">Hover Me</div>
+  <button id="secretButton">Long Press</button>
+</div>
+  <div class="gallery-container">
+    <h1>Simple Image Gallery</h1>
+    
+    <div class="slideshow-container">
+        <div class="slide active">
+            <img src="0a970151bbc81d3d1a02e0b4151ba9c3.jpg" alt="0a970151bbc81d3d1a02e0b4151ba9c3.jpg">
+            <div class="caption">Image 1</div>
+        </div>
+        
+        <div class="slide">
+            <img src="5bb7e71faa72004a9485e7e19655d7e8.jpg" alt="/5bb7e71faa72004a9485e7e19655d7e8.jpg">
+            <div class="caption">Image 2</div>
+        </div>
+        
+        <div class="slide">
+            <img src="90c43b62f65bff6b1945144a8a63a4d4.jpg" alt="90c43b62f65bff6b1945144a8a63a4d4.jpg">
+            <div class="caption">Image 3</div>
+        </div>
+        
+        <div class="slide">
+            <img src="878f3b150d84483ed2aa7f308ef782dc (1).jpg" alt="878f3b150d84483ed2aa7f308ef782dc">
+            <div class="caption">Image 4</div>
+        </div>
+        
+        <button class="prev">❮</button>
+        <button class="next">❯</button>
+    </div>
+    
+    <div class="dots-container">
+        <span class="dot active" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+</div>
+<br>
+<br>  
+<br>
+<br>
+<Div>
+  <!-- Keypress Detection -->
+  <p>Press any key: <span id="keyInfo">Waiting...</span></p>
+
+  <!-- Bonus: Double-click / Long Press -->
+</Div>
+<br> <br>
+<!-- Registration form -->
+<Div>
+<form id="registrationForm">
+  <label for="email">Email:</label>
+  <input type="text" id="email" name="email" placeholder="Enter your email" required>
+  <small id="emailFeedback"></small>
+
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" placeholder="Minimum 8 characters" required>
+  <small id="passwordFeedback"></small>
+
+  <button type="submit">Submit</button>
+</form>
+
+  <script src="script.js"></script>
+</body>
+</html>
